@@ -36,6 +36,7 @@ const Navbar = class extends React.Component {
     return (
       <nav
         className="navbar is-transparent"
+        style={{backgroundColor: "#333"}}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -60,20 +61,21 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+            
+              <Link className="navbar-item" to="/about" style={{color: "white"}}>
+                Home
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link className="navbar-item" to="/products" style={{color: "white"}}>
+                Industries
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
+              <Link className="navbar-item" to="/blog" style={{color: "white"}}>
+                BidPrime News
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
+              <Link className="navbar-item" to="/contact" style={{color: "white"}}>
+                Podcast
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+              <Link className="navbar-item" to="/contact/examples" style={{color: "white"}}>
+                Take a Tour
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
